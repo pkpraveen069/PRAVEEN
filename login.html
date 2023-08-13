@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Login_form</title>
+</head>
+<table align="center">
+     <center><h3>LOGIN FORM</h3></center>
+<tr>
+     <td>Name:</td>
+     <td><input type="text" name="uname" id="name"></td>
+</tr>
+<tr>     
+     <td>Password:</td>
+     <td><input type="password" id="pass"></td>
+</tr>
+     <td><a href="dept.html" onclick="validate()">Login</a></tr>
+</table>
+<script>
+function validate()
+{  
+var name=document.getElementById("name").value;
+var password=document.getElementById("pass").value;    
+if(name==null || password=="")
+  {
+      alert("Name or password cannot be blank");
+  }
+else if(name==password)
+  {
+      alert("Login successfully");
+  }
+else 
+  {
+      alert("Incorrect");  
+  }  
+}  
+</script>
+</html>
+ 
